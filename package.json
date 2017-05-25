@@ -16,7 +16,7 @@
     "watch": "npm-run-all -p watch:js watch:html watch:manifest watch:images",
     "test-pwa": "lighthouse $PWA_URL",
     "server": "http-server --cors -p 5000 build/ &",
-    "ngrok": "ngrok start -config ./ngrok.yml pwa",
+    "ngrok": "./ngrok start -config ./ngrok.yml pwa",
     "start": "npm-run-all -p watch server"
   },
   "engines": {
